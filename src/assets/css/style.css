@@ -2543,7 +2543,7 @@ Main Header
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
 }
 .main-header .main-box {
@@ -4743,7 +4743,7 @@ Main Header
   padding: 10px 0;
 }
 .sticky-header .logo img {
-  max-height: 40px;
+  max-height: 260px;
 }
 .sticky-header .nav-outer {
   position: relative;
@@ -5579,10 +5579,11 @@ Section Title
 }
 .banner-section .content-box .title {
   color: #ffffff;
-  font-size: 128px;
+  font-size: 100px;
   line-height: 120px;
   margin-bottom: 50px;
 }
+
 @media (max-width: 991.98px) {
   .banner-section .content-box .title {
     font-size: 60px;

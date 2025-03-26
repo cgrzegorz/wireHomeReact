@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeOne from "./components/HomeOne/index.jsx";
 import HomeTwo from "./components/HomeTwo/index.jsx";
 import HomeThree from "./components/HomeThree/index.jsx";
@@ -22,116 +22,121 @@ import Error from "./components/ErrorPages/Error.jsx";
 import Products from "./components/ShopPages/Products.jsx";
 import ProductsSidebar from "./components/ShopPages/ProductsSidebar.jsx";
 import ProductsDetails from "./components/ShopPages/ProductsDetails.jsx";
-import Cart from "./components/ShopPages/Cart.jsx"
+import Cart from "./components/ShopPages/Cart.jsx";
 import Checkout from "./components/ShopPages/Checkout.jsx";
+import { HomeMain } from "./components/HomeMain/index.jsx";
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    Component:Layout,
-    children:[
+    path: "/",
+    Component: Layout,
+    children: [
       {
-        index:true,
-        element: <HomeOne />
+        index: true,
+        element: <HomeMain />,
+      },
+      {
+        path: "/index-1",
+        element: <HomeOne />,
       },
       {
         path: "/index-2",
-        element: <HomeTwo />
+        element: <HomeTwo />,
       },
       {
         path: "/index-3",
-        element: <HomeThree />
+        element: <HomeThree />,
       },
       {
         path: "/index-4",
-        element: <HomeFour />
+        element: <HomeFour />,
       },
       {
         path: "/index-5",
-        element: <HomeFive />
+        element: <HomeFive />,
       },
       {
         path: "/page-about",
-        element: <AboutUs />
+        element: <AboutUs />,
       },
       {
         path: "/page-services",
-        element: <Services />
+        element: <Services />,
       },
       {
         path: "/page-projects",
-        element: <Projects />
+        element: <Projects />,
       },
       {
         path: "/page-project-details",
-        element: <ProjectsDetails />
+        element: <ProjectsDetails />,
       },
       {
         path: "/shop-products",
-        element: <Products />
+        element: <Products />,
       },
       {
         path: "/shop-cart",
-        element: <Cart />
+        element: <Cart />,
       },
       {
         path: "/shop-checkout",
-        element: <Checkout />
+        element: <Checkout />,
       },
       {
         path: "/shop-products-sidebar",
-        element: <ProductsSidebar />
+        element: <ProductsSidebar />,
       },
       {
         path: "/shop-product-details",
-        element: <ProductsDetails />
+        element: <ProductsDetails />,
       },
       {
         path: "/news-grid",
-        element: <News />
+        element: <News />,
       },
       {
         path: "/news-details",
-        element: <NewsDetails />
+        element: <NewsDetails />,
       },
       {
         path: "/page-contact",
-        element: <Contact />
+        element: <Contact />,
       },
       {
         path: "/page-team",
-        element: <Team />
+        element: <Team />,
       },
       {
         path: "/page-team-details",
-        element: <TeamDetails />
+        element: <TeamDetails />,
       },
       {
         path: "/page-testimonial",
-        element: <Testimonial />
+        element: <Testimonial />,
       },
       {
         path: "/project-details",
-        element: <ProjectsDetails />
+        element: <ProjectsDetails />,
       },
       {
         path: "/page-faq",
-        element: <Faq />
+        element: <Faq />,
       },
       {
         path: "/page-service-details",
-        element: <ServicesDetails />
+        element: <ServicesDetails />,
       },
       {
         path: "/page-pricing",
-        element: <Pricing />
+        element: <Pricing />,
       },
       {
         path: "*",
-        element: <Error />
+        element: <Error />,
       },
-    ]
-  }
+    ],
+  },
 ]);
 
 function Router() {
