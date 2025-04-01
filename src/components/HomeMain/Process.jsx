@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import processImage from "../../assets/images/resource/process1-1.png";
+import processImage from "../../assets/images/draw1830.webp";
 import processBgImage from "../../assets/images/background/12.jpg";
 
 function Process({ className }) {

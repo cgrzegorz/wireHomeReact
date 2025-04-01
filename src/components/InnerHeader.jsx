@@ -161,7 +161,7 @@ function Header({ className = "", scroll = false }) {
           <ul className="contact-list-one">
             <li>
               <i className="icon lnr-icon-phone-handset"></i>
-              <span className="title">Call Now</span>
+              <span className="title">sdsdCall Now</span>
               <div className="text">
                 <a href="tel:+92880098670">+92 (8800) - 98670</a>
               </div>

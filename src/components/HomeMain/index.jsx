@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Header from "./Header";
 import Banner from "../HomeMain/Banner";
@@ -6,7 +7,6 @@ import Process from "../HomeMain/Process";
 import Faq from "../HomeMain/Faq";
 import Cta from "../HomeMain/Cta";
 import Footer from "../HomeMain/Footer";
-import News from "../HomeMain/News";
 
 export const HomeMain = () => {
   return (
@@ -16,7 +16,6 @@ export const HomeMain = () => {
       <Service />
       <Process />
       <Faq />
-      <News />
       <Cta />
       <Footer />
     </>

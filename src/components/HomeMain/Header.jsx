@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import useScrollPosition from "../../lib/useScrollPosition";
 import logo1 from "../../assets/images/logo.png";
 import Stickylogo from "../../assets/images/logo-2.png";
 import Navigation from "../Navigation.jsx";
@@ -11,7 +10,6 @@ function Header({ className = "", scroll = false }) {
     isMobileMenuOpen: false,
     isSearchPopupOpen: false,
   });
-  // const isSticky = useScrollPosition(100);
   const isSticky = true;
 
   const toggleMenu = useCallback((menuType) => {
@@ -58,51 +56,28 @@ function Header({ className = "", scroll = false }) {
           </ul>
           <ul className="contact-list-one">
             <li>
-              <i className="icon lnr-icon-phone-handset"></i>
-              <span className="title">Call Now</span>
               <div className="text">
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                <i className="icon lnr-icon-phone-handset"></i>{" "}
+                <a href="tel:+48509898316">+48 509 898 316</a>
               </div>
             </li>
             <li>
-              <i className="icon lnr-icon-envelope1"></i>
-              <span className="title">Send Email</span>
               <div className="text">
-                <a href="mailto:help@company.com">help@company.com</a>
+                <i className="icon lnr-icon-envelope1"></i>
+                <a href="mailto:help@company.com">biuro@wirehome.pl</a>
               </div>
-            </li>
-            <li>
-              <i className="icon lnr-icon-map-marker"></i>
-              <span className="title">Address</span>
-              <div className="text">66 Broklyant, New York India 3269</div>
             </li>
           </ul>
           <ul className="social-links">
             <li>
-              <Link to="#">
-                <i className="fab fa-twitter"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
+              <Link to="https://www.facebook.com/wirehomesmart/">
                 <i className="fab fa-facebook-f"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <i className="fab fa-pinterest"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <i className="fab fa-instagram"></i>
               </Link>
             </li>
           </ul>
         </nav>
       </div>
 
-      {/* <!-- Header Search --> */}
       <div
         className={`search-popup ${
           menuState.isSearchPopupOpen ? "active" : ""

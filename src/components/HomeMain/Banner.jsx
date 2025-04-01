@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BannerImage1 from "../../assets/images/test2.jpg";
+import BannerImage1 from "../../assets/images/dom1.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -40,7 +40,10 @@ function Banner({ className }) {
                   Nowoczesna instalacja dla nowoczesnego domu
                 </h1>
                 <div className="btn-box animate-3">
-                  <Link to="/" className="theme-btn btn-style-one bg-light">
+                  <Link
+                    to="/contact"
+                    className="theme-btn btn-style-one bg-light"
+                  >
                     <span className="btn-title">
                       Umów się na bezpłatną konsultację
                     </span>

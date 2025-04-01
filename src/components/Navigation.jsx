@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -7,23 +8,6 @@ function Navigation() {
       <ul className="navigation">
         <li className="current dropdown">
           <Link to="/">Home</Link>
-          <ul>
-            <li>
-              <Link to="/">Home page 01</Link>
-            </li>
-            <li>
-              <Link to="/index-2">Home page 02</Link>
-            </li>
-            <li>
-              <Link to="/index-3">Home page 03</Link>
-            </li>
-            <li>
-              <Link to="/index-4">Home page 04</Link>
-            </li>
-            <li>
-              <Link to="/index-5">Home page 05</Link>
-            </li>
-          </ul>
         </li>
         {/* <li className="dropdown">
           <Link to="#">Pages</Link>
@@ -99,13 +83,16 @@ function Navigation() {
           </ul>
         </li> */}
         <li className="dropdown">
-          <Link to="#">Blog</Link>
+          <Link to="#">Usługi</Link>
           <ul>
             <li>
-              <Link to="/news-grid">News Grid</Link>
+              <Link to="/instalacje-elektryczne">Instalacje elektryczne</Link>
             </li>
             <li>
-              <Link to="/news-details">News Details</Link>
+              <Link to="/smart-dom">Smart dom</Link>
+            </li>
+            <li>
+              <Link to="/pomiary-elektryczne">Pomiary elektryczne</Link>
             </li>
           </ul>
           <div className="dropdown-btn">
@@ -113,7 +100,7 @@ function Navigation() {
           </div>
         </li>
         <li>
-          <Link to="/page-contact">Kontakt</Link>
+          <Link to="/contact">Kontakt</Link>
         </li>
       </ul>
     </nav>

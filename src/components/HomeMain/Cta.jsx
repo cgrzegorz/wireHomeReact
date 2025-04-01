@@ -27,7 +27,7 @@ function Cta({ className }) {
                 </div>
                 <div className="btn-box">
                   <Link
-                    to="/page-contact"
+                    to="/contact"
                     className="theme-btn btn-style-one hvr-light"
                   >
                     <span className="btn-title">Umów konsultację</span>

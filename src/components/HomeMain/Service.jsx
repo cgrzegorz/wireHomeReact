@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
-import Service1 from "../../assets/images/resource/service1-1.jpg";
-import Service2 from "../../assets/images/resource/service1-2.jpg";
-import Service3 from "../../assets/images/resource/service1-3.jpg";
+import Service1 from "../../assets/images/room1.webp";
+import Service3 from "../../assets/images/resource/service1-3.webp";
+import Service2 from "../../assets/images/smartCouple340.webp";
 
+// eslint-disable-next-line react/prop-types
 function Service({ className }) {
   return (
     <>
@@ -21,12 +23,21 @@ function Service({ className }) {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <Link to="/page-service-details">
-                      <img className="w-100" src={Service1} alt="Image" />
+                    <Link to="/instalacje-elektryczne">
+                      <img
+                        src={Service1}
+                        alt="Image"
+                        style={{
+                          width: "340px",
+                          height: "202px",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
                     </Link>
                   </figure>
                   <Link
-                    to="/page-service-details"
+                    to="/instalacje-elektryczne"
                     className="theme-btn read-more"
                   >
                     Więcej informacji <i className="fa fa-arrow-up"></i>
@@ -37,7 +48,7 @@ function Service({ className }) {
                     {" "}
                     <i className="icon flaticon-028-pcb-board"></i>
                     <h4 className="title">
-                      <Link to="/page-service-details">
+                      <Link to="/instalacje-elektryczne">
                         Instalacje Elektryczne
                       </Link>
                     </h4>
@@ -55,14 +66,20 @@ function Service({ className }) {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <Link to="/page-service-details">
-                      <img className="w-100" src={Service2} alt="Image" />
+                    <Link to="/smart-dom">
+                      <img
+                        src={Service2}
+                        alt="Image"
+                        style={{
+                          width: "340px",
+                          height: "202px",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
                     </Link>
                   </figure>
-                  <Link
-                    to="/page-service-details"
-                    className="theme-btn read-more"
-                  >
+                  <Link to="/smart-dom" className="theme-btn read-more">
                     Więcej informacji <i className="fa fa-arrow-up"></i>
                   </Link>
                 </div>
@@ -71,7 +88,7 @@ function Service({ className }) {
                     {" "}
                     <i className="icon flaticon-029-electric-meter"></i>
                     <h4 className="title">
-                      <Link to="/page-service-details">Systemy Smart Home</Link>
+                      <Link to="/smart-dom">Systemy Smart Home</Link>
                     </h4>
                   </div>
                   <div className="inner">
@@ -87,12 +104,21 @@ function Service({ className }) {
               <div className="inner-box">
                 <div className="image-box">
                   <figure className="image">
-                    <Link to="/page-service-details">
-                      <img className="w-100" src={Service3} alt="Image" />
+                    <Link to="/pomiary-elektryczne">
+                      <img
+                        src={Service3}
+                        alt="Image"
+                        style={{
+                          width: "340px",
+                          height: "202px",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
                     </Link>
                   </figure>
                   <Link
-                    to="/page-service-details"
+                    to="/pomiary-elektryczne"
                     className="theme-btn read-more"
                   >
                     Więcej informacji <i className="fa fa-arrow-up"></i>
@@ -100,12 +126,9 @@ function Service({ className }) {
                 </div>
                 <div className="content-box">
                   <div className="info-box">
-                    {" "}
                     <i className="icon flaticon-050-protect"></i>
                     <h4 className="title">
-                      <Link to="/page-service-details">
-                        Pomiary Elektryczne
-                      </Link>
+                      <Link to="/pomiary-elektryczne">Pomiary Elektryczne</Link>
                     </h4>
                   </div>
                   <div className="inner">

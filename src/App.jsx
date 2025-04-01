@@ -1,7 +1,7 @@
 import Router from "./Router.jsx";
 import { useEffect, useState } from "react";
 import Loader from "./components/Helper/Loader.jsx";
-import Layout from "./components/Helper/Layout.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

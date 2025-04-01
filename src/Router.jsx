@@ -13,7 +13,6 @@ import NewsDetails from "./components/NewsPages/NewsDetails.jsx";
 import TeamDetails from "./components/TeamPages/TeamDetails.jsx";
 import Contact from "./components/ContactPages/Contact.jsx";
 import Testimonial from "./components/TestimonialPages/Testimonial.jsx";
-import ServicesDetails from "./components/ServicesPages/ServicesDetails.jsx";
 import Pricing from "./components/PricingPages/index.jsx";
 import Team from "./components/TeamPages/index.jsx";
 import Layout from "./components/Helper/Layout.jsx";
@@ -25,6 +24,10 @@ import ProductsDetails from "./components/ShopPages/ProductsDetails.jsx";
 import Cart from "./components/ShopPages/Cart.jsx";
 import Checkout from "./components/ShopPages/Checkout.jsx";
 import { HomeMain } from "./components/HomeMain/index.jsx";
+import InstalacjeElektryczne from "./components/ServicesPages/InstalacjeElektryczne.jsx";
+import PomiaryElektryczne from "./components/ServicesPages/PomiaryElektryczne.jsx";
+import SmartDom from "./components/ServicesPages/SmartDom.jsx";
+import NajczestszeBledy from "./components/NewsPages/NajczestszeBledy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,102 +38,114 @@ const router = createBrowserRouter([
         index: true,
         element: <HomeMain />,
       },
+      // {
+      //   path: "/index-1",
+      //   element: <HomeOne />,
+      // },
+      // {
+      //   path: "/index-2",
+      //   element: <HomeTwo />,
+      // },
+      // {
+      //   path: "/index-3",
+      //   element: <HomeThree />,
+      // },
+      // {
+      //   path: "/index-4",
+      //   element: <HomeFour />,
+      // },
+      // {
+      //   path: "/index-5",
+      //   element: <HomeFive />,
+      // },
+      // {
+      //   path: "/page-about",
+      //   element: <AboutUs />,
+      // },
+      // {
+      //   path: "/page-services",
+      //   element: <Services />,
+      // },
+      // {
+      //   path: "/page-projects",
+      //   element: <Projects />,
+      // },
+      // {
+      //   path: "/page-project-details",
+      //   element: <ProjectsDetails />,
+      // },
+      // {
+      //   path: "/shop-products",
+      //   element: <Products />,
+      // },
+      // {
+      //   path: "/shop-cart",
+      //   element: <Cart />,
+      // },
+      // {
+      //   path: "/shop-checkout",
+      //   element: <Checkout />,
+      // },
+      // {
+      //   path: "/shop-products-sidebar",
+      //   element: <ProductsSidebar />,
+      // },
+      // {
+      //   path: "/shop-product-details",
+      //   element: <ProductsDetails />,
+      // },
+      // {
+      //   path: "/news-grid",
+      //   element: <News />,
+      // },
+      // {
+      //   path: "/news-details",
+      //   element: <NewsDetails />,
+      // },
+      // {
+      //   path: "/blog/najczestsze-bledy",
+      //   element: <NajczestszeBledy />,
+      // },
       {
-        path: "/index-1",
-        element: <HomeOne />,
-      },
-      {
-        path: "/index-2",
-        element: <HomeTwo />,
-      },
-      {
-        path: "/index-3",
-        element: <HomeThree />,
-      },
-      {
-        path: "/index-4",
-        element: <HomeFour />,
-      },
-      {
-        path: "/index-5",
-        element: <HomeFive />,
-      },
-      {
-        path: "/page-about",
-        element: <AboutUs />,
-      },
-      {
-        path: "/page-services",
-        element: <Services />,
-      },
-      {
-        path: "/page-projects",
-        element: <Projects />,
-      },
-      {
-        path: "/page-project-details",
-        element: <ProjectsDetails />,
-      },
-      {
-        path: "/shop-products",
-        element: <Products />,
-      },
-      {
-        path: "/shop-cart",
-        element: <Cart />,
-      },
-      {
-        path: "/shop-checkout",
-        element: <Checkout />,
-      },
-      {
-        path: "/shop-products-sidebar",
-        element: <ProductsSidebar />,
-      },
-      {
-        path: "/shop-product-details",
-        element: <ProductsDetails />,
-      },
-      {
-        path: "/news-grid",
-        element: <News />,
-      },
-      {
-        path: "/news-details",
-        element: <NewsDetails />,
-      },
-      {
-        path: "/page-contact",
+        path: "/contact",
         element: <Contact />,
       },
+      // {
+      //   path: "/page-team",
+      //   element: <Team />,
+      // },
+      // {
+      //   path: "/page-team-details",
+      //   element: <TeamDetails />,
+      // },
+      // {
+      //   path: "/page-testimonial",
+      //   element: <Testimonial />,
+      // },
+      // {
+      //   path: "/project-details",
+      //   element: <ProjectsDetails />,
+      // },
+      // {
+      //   path: "/page-faq",
+      //   element: <Faq />,
+      // },
       {
-        path: "/page-team",
-        element: <Team />,
+        path: "/instalacje-elektryczne",
+        element: <InstalacjeElektryczne />,
       },
       {
-        path: "/page-team-details",
-        element: <TeamDetails />,
+        path: "/pomiary-elektryczne",
+        element: <PomiaryElektryczne />,
       },
       {
-        path: "/page-testimonial",
-        element: <Testimonial />,
+        path: "/smart-dom",
+        element: <SmartDom />,
       },
-      {
-        path: "/project-details",
-        element: <ProjectsDetails />,
-      },
-      {
-        path: "/page-faq",
-        element: <Faq />,
-      },
-      {
-        path: "/page-service-details",
-        element: <ServicesDetails />,
-      },
-      {
-        path: "/page-pricing",
-        element: <Pricing />,
-      },
+      // {
+      //   path: "/page-pricing",
+      //   element: <Pricing />,
+      // },
       {
         path: "*",
         element: <Error />,

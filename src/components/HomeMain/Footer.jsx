@@ -18,12 +18,17 @@ function Footer({ className }) {
                 <div className="footer-widget about-widget">
                   <h5 className="about-title">O nas</h5>
                   <div className="text">
-                    Desires to obtain pain of itself, because it is pain, but
-                    occasionally circumstances.
+                    Jesteśmy zespołem pasjonatów elektryki, którzy z
+                    zaangażowaniem realizują każdy projekt. Posiadamy niezbędne
+                    uprawnienia i doświadczenie, co gwarantuje bezpieczeństwo i
+                    najwyższą jakość usług.
                   </div>
                   <ul className="social-icon-two">
                     <li>
-                      <Link to="#">
+                      <Link
+                        target={"_blank"}
+                        to="https://www.facebook.com/wirehomesmart"
+                      >
                         <i className="fab fa-facebook"></i>
                       </Link>
                     </li>
@@ -35,10 +40,18 @@ function Footer({ className }) {
                   <h5 className="widget-title">Przeglądaj</h5>
                   <ul className="user-links">
                     <li>
-                      <Link to="#">Blog</Link>
+                      <Link to="/instalacje-elektryczne">
+                        Instalacje elektryczne
+                      </Link>
                     </li>
                     <li>
-                      <Link to="#">Kontakt</Link>
+                      <Link to="/smart-dom">Smart dom</Link>
+                    </li>
+                    <li>
+                      <Link to="/pomiary-elektryczne">Pomiary elektryczne</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Kontakt</Link>
                     </li>
                   </ul>
                 </div>
@@ -47,20 +60,22 @@ function Footer({ className }) {
                 <div className="footer-widget contact-widget">
                   <h5 className="widget-title">Kontakt</h5>
                   <div className="widget-content">
-                    <div className="text">
-                      66 Road Broklyn Street, 600 New <br /> York, USA
-                    </div>
                     <ul className="contact-info">
                       <li>
-                        <i className="fa fa-envelope"></i>{" "}
+                        <i className="fa fa-home"></i>
+                        Wieluń
+                        <br />
+                      </li>
+                      <li>
+                        <i className="fa fa-envelope"></i>
                         <Link to="mailto:biuro@wirehome.pl">
                           biuro@wirehome.pl
                         </Link>
                         <br />
                       </li>
                       <li>
-                        <i className="fa fa-phone-square"></i>{" "}
-                        <Link to="tel:+001112223333">+48 509 898 316</Link>
+                        <i className="fa fa-phone-square"></i>
+                        <Link to="tel:509898316">+48 509 898 316</Link>
                         <br />
                       </li>
                     </ul>

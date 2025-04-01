@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import Accordion from "../../lib/Accordion";
-import FaqImage from "../../assets/images/resource/image-6.jpg";
+import FaqImage from "../../assets/images/rozdzielnia720.webp";
 
 function Faq({ className }) {
-  const [isOpen, setOpen] = useState(false);
   return (
     <>
-      {/* <!-- Faq's Section --> */}
       <section className={`pt-5 mt-1 offer-section ${className || ""}`}>
         <div className="auto-container">
           <div className="row">
@@ -31,28 +29,13 @@ function Faq({ className }) {
                   <figure className="image overlay-anim">
                     <img src={FaqImage} alt="Faq Img" />
                   </figure>
-                  <div className="video-box">
-                    {/* <a
-                      onClick={() => setOpen(true)}
-                      className="play-btn lightbox-image"
-                    >
-                      <i className="icon fa fa-play"></i>
-                    </a> */}
-                    {/* <ModalVideo
-                      channel="youtube"
-                      autoplay
-                      isOpen={isOpen}
-                      videoId="Fvae8nxzVz4"
-                      onClose={() => setOpen(false)}
-                    /> */}
-                  </div>
+                  <div className="video-box"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <!-- End Faq's Section --> */}
     </>
   );
 }
